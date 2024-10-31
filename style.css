@@ -8,49 +8,80 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
-header, section {
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
-    margin-bottom: 20px;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-section {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home-section h1 {
+    font-size: 3em;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #0073e6;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
 }
 
 h2 {
     color: #0073e6;
-}
-
-.banner {
-    background: #333;
-    color: white;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 50px;
 }
 
-.banner h1 {
-    font-size: 2.5em;
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.cta {
-    background: #0073e6;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-section h2 {
-    border-bottom: 2px solid #0073e6;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.project-item, .experience-item {
-    margin: 15px 0;
+.skills-grid div, .project-item, .experience-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 form {
@@ -59,20 +90,23 @@ form {
 }
 
 form label, form input, form textarea {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 button {
-    margin-top: 10px;
     padding: 10px;
     background: #0073e6;
     color: white;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
     border-radius: 5px;
 }
 
 footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    background: #f4f4f4;
+    padding: 10px 0;
+    margin-top: 20px;
 }
